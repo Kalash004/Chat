@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400" prefWidth="400"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cz.cvut.fel.pjv.semwork.peer_to_peer_chat.service_view.fxml_controllers.OptionsController"
+            fx:id="rootPane"
+            styleClass="main-root dark-mode">
+
+    <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.topAnchor="0.0">
+        <Button alignment="TOP_LEFT"
+                maxWidth="100"
+                text="Return"
+                onAction="#onReturnClick"
+                styleClass="button" />
+    </HBox>
+
+    <VBox alignment="CENTER"
+          layoutX="50" layoutY="40"
+          prefWidth="300"
+          spacing="15"
+          AnchorPane.bottomAnchor="40" AnchorPane.leftAnchor="50"
+          AnchorPane.rightAnchor="50" AnchorPane.topAnchor="40">
+
+        <Label text="Appearance:" />
+        <CheckBox fx:id="darkThemeSwitch" onAction="#onDarkThemeSwitch" selected="true" styleClass="choice-box" text="Dark Mode" />
+
+        <Label text="Sort Users:" />
+        <ChoiceBox fx:id="sortChoiceBox"  onAction="#onSortChoiceBox" prefWidth="150.0" styleClass="check-box" />
+    </VBox>
+</AnchorPane>

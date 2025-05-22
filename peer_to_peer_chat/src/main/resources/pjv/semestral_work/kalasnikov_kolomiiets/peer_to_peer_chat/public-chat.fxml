@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.semwork.peer_to_peer_chat.service_view.fxml_controllers.PublicChatController">
+    <VBox prefWidth="160.0"
+          AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+          styleClass="card" spacing="5">
+        <Label text="Active users:" styleClass="label header-label"/>
+        <Separator />
+        <ListView fx:id="userList" VBox.vgrow="ALWAYS" styleClass="list-view" onMouseClicked="#onUserListClick"/>
+        <Button mnemonicParsing="false" text="Options" styleClass="options-button" onAction="#onOptionsButtonClick"/>
+    </VBox>
+
+    <!-- Chat Section -->
+    <VBox layoutX="160.0"
+          AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="160.0"
+          styleClass="card">
+
+        <!-- Decorative Header -->
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="chat-header">
+            <Label fx:id="chatLabel" text="Messages can't be sent until another user connects" styleClass="label header-label"/>
+        </HBox>
+
+        <Separator/>
+
+        <!-- Message History -->
+        <ListView fx:id="messageHistory" VBox.vgrow="ALWAYS" styleClass="list-view"/>
+
+        <!-- Message Composer -->
+        <HBox spacing="10" styleClass="tool-bar">
+            <TextArea fx:id="messageArea" prefHeight="60.0" styleClass="text-area" wrapText="true"/>
+            <Button fx:id="sendButton" minWidth="80.0" text="Send" onAction="#onSendButtonClick" styleClass="button"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

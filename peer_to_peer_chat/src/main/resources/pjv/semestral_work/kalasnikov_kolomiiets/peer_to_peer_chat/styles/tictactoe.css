@@ -1,0 +1,61 @@
+.light-mode.root {
+    -fx-background-color: #f4f4f4;
+    -fx-text-fill: #222;
+    -fx-padding: 10;
+}
+
+.dark-mode.root {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #f4f4f4;
+    -fx-padding: 10;
+}
+
+.tictactoe-grid {
+    -fx-border-color: #444;
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+}
+
+.button {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.return-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 6 14;
+    -fx-border-width: 0;
+}
+
+.return-button:hover {
+    -fx-background-color: #0056b3;
+    -fx-border-width: 0;
+}
+
+.light-mode .button {
+    -fx-border-color: #444;
+    -fx-text-fill: black;
+}
+.dark-mode .button {
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: rgba(100, 100, 100, 0.1);
+}
+
+.button:pressed {
+    -fx-background-color: rgba(100, 100, 100, 0.2);
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: inherit;
+}

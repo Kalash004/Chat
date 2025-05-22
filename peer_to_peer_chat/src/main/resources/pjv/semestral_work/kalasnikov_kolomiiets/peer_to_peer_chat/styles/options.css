@@ -1,0 +1,115 @@
+.light-mode.root {
+    -fx-background-color: #f4f4f4;
+}
+
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #005a9e;
+}
+
+
+.danger-button {
+    -fx-background-color: #b69292;
+    -fx-text-fill: #7b0101;
+}
+
+.light-mode .danger-button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #7b0101;
+}
+
+.dark-mode .danger-button:hover {
+    -fx-background-color: #2e2e2e;
+    -fx-text-fill: red;
+}
+
+.light-mode .options-button {
+    -fx-background-color: #dcdcdc;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.light-mode .options-button:hover {
+    -fx-background-color: gray;
+}
+
+.label, .check-box, .choice-box {
+    -fx-text-fill: inherit;
+    -fx-font-weight: normal;
+}
+
+.light-mode .check-box {
+    -fx-text-fill: #000000;
+}
+.light-mode .check-box .box {
+    -fx-background-color: #f0f0f0;
+}
+
+.choice-box {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-min-width: 225px;
+}
+.light-mode .choice-box {
+    -fx-background-color: #f0f0f0;
+    -fx-mark-color: #000000;
+    -fx-border-color: #cccccc;
+}
+
+.light-mode .choice-box:hover {
+    -fx-background-color: #e6e6e6;
+}
+
+.dark-mode.root {
+    -fx-background-color: #2e2e2e;
+    -fx-text-fill: white;
+}
+.dark-mode .check-box {
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .check-box .box {
+    -fx-background-color: #2e2e2e;
+}
+
+.dark-mode .choice-box {
+    -fx-background-color: #2e2e2e;
+    -fx-mark-color: #ffffff;
+    -fx-border-color: #555555;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.dark-mode .choice-box:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.dark-mode .choice-box .context-menu {
+    -fx-background-color: #3c3f41;
+}
+
+.dark-mode .choice-box .menu-item {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: white;
+}
+
+.dark-mode .choice-box .menu-item:hover {
+    -fx-background-color: #5a5a5a;
+}
+
+.choice-box .menu-item:hover {
+    -fx-cursor: hand;
+}
+
+.label, .choice-box, .check-box, .button {
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+    -fx-border-width: 1;
+    -fx-border-radius: 6px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 2, 0, 0, 1);
+}

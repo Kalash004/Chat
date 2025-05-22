@@ -1,0 +1,70 @@
+.dark-mode.root {
+    -fx-background-color: #2e2e2e;
+}
+
+.dark-mode .title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.dark-mode .username-field {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+.dark-mode .connect-button {
+    -fx-background-color: #007bff;
+    -fx-cursor: hand;
+}
+
+.dark-mode .connect-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.dark-mode .options-button {
+    -fx-background-color: #4a3333;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.dark-mode .options-button:hover {
+    -fx-background-color: brown;
+}
+
+.light-mode.root {
+    -fx-background-color: #f4f4f4;
+}
+
+.light-mode .title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.light-mode .username-field {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #888888;
+}
+
+.light-mode .connect-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.light-mode .connect-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.light-mode .options-button {
+    -fx-background-color: #dcdcdc;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.light-mode .options-button:hover {
+    -fx-background-color: gray;
+}

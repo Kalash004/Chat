@@ -1,0 +1,135 @@
+.root {
+    -fx-background-color: #f1f3f5;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+.list-cell:hover {
+    -fx-cursor: hand;
+}
+
+.light-mode .options-button {
+    -fx-background-color: #dcdcdc;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.light-mode .options-button:hover {
+    -fx-background-color: gray;
+}
+
+.light-mode .card {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 10, 0, 0, 3);
+}
+
+.light-mode .label {
+    -fx-text-fill: #343a40;
+}
+
+.light-mode .header-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.light-mode .chat-header {
+    -fx-background-color: #e9ecef;
+    -fx-background-radius: 8px;
+    -fx-padding: 5 10;
+}
+
+.light-mode .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 5;
+}
+
+.light-mode .text-area {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6;
+}
+
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 6 14;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.light-mode .tool-bar {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+    -fx-background-color: transparent;
+}
+
+/* Dark mode overrides */
+.dark-mode {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* Card background */
+.dark-mode .card {
+    -fx-background-color: #2b2b2b;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 3);
+}
+
+.dark-mode .label {
+    -fx-text-fill: #f8f9fa;
+}
+
+.dark-mode .header-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dark-mode .chat-header {
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 8px;
+    -fx-padding: 5 10;
+}
+
+.dark-mode .list-view {
+    -fx-background-color: #252526;
+    -fx-border-color: #3c3f41;
+    -fx-text-fill: white;
+}
+
+.dark-mode .text-area {
+    -fx-border-color: #3c3f41;
+    -fx-text-fill: white;
+}
+
+.dark-mode .text-area .content {
+    -fx-background-color: #252526;
+}
+
+.dark-mode .tool-bar {
+    -fx-background-color: transparent;
+}
+
+.dark-mode .options-button {
+    -fx-background-color: #4a3333;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.dark-mode .options-button:hover {
+    -fx-background-color: brown;
+}
+

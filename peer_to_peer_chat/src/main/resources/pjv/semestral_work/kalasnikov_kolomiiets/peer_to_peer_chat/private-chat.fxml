@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fel.pjv.semwork.peer_to_peer_chat.service_view.fxml_controllers.PrivateChatController">
+    <VBox prefWidth="160.0" styleClass="card" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" spacing="5">
+        <Label styleClass="label header-label" text="Active users:" />
+        <Separator />
+        <ListView fx:id="userList" onMouseClicked="#onUserListClick" prefHeight="340.0" prefWidth="160.0" styleClass="list-view" VBox.vgrow="ALWAYS" />
+      <Button mnemonicParsing="false" text="Switch to public chat" styleClass="button" onAction="#onPublicChatButtonClick"/>
+      <Button mnemonicParsing="false" text="Options" styleClass="options-button" onAction="#onOptionsButtonClick"/>
+    </VBox>
+
+    <!-- Chat Section -->
+    <VBox layoutX="160.0" styleClass="card" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <!-- Decorative Header -->
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="chat-header">
+            <Label fx:id="chatLabel" styleClass="label header-label" text="Chat" />
+        </HBox>
+
+        <Separator />
+
+        <!-- Message History -->
+        <ListView fx:id="messageHistory" styleClass="list-view" VBox.vgrow="ALWAYS" />
+
+        <!-- Message Composer -->
+        <HBox spacing="10" styleClass="tool-bar">
+            <TextArea fx:id="messageArea" prefHeight="60.0" styleClass="text-area" wrapText="true" />
+            <Button fx:id="sendButton" minWidth="80.0" onAction="#onSendButtonClick" styleClass="button" text="Send" />
+            <Button fx:id="ticButton" minWidth="125.0" onAction="#onTicButtonClick" styleClass="button" text="Play TicTacToe" />
+        </HBox>
+    </VBox>
+</AnchorPane>

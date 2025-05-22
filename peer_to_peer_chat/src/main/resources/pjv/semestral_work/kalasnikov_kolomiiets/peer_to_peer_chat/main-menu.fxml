@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="250" prefWidth="400"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cz.cvut.fel.pjv.semwork.peer_to_peer_chat.service_view.fxml_controllers.MainMenuController"
+            fx:id="rootPane"
+            styleClass="main-root dark-mode">
+
+   <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.topAnchor="0.0">
+      <Button alignment="TOP_LEFT"
+              maxWidth="100"
+              text="Options"
+              onAction="#onOptionsButtonClick"
+              styleClass="options-button" />
+   </HBox>
+
+   <VBox alignment="CENTER"
+         layoutX="50" layoutY="40"
+         prefWidth="300"
+         spacing="15"
+         AnchorPane.bottomAnchor="40" AnchorPane.leftAnchor="50"
+         AnchorPane.rightAnchor="50" AnchorPane.topAnchor="40">
+
+      <Label text="Network Chat" styleClass="title-label" />
+
+      <TextField fx:id="usernameField"
+                 maxWidth="200"
+                 promptText="Username"
+                 styleClass="username-field" />
+
+      <Button maxWidth="200" text="Connect" styleClass="connect-button" onAction="#onConnectButtonClick" />
+   </VBox>
+</AnchorPane>
