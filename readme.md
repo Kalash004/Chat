@@ -15,7 +15,7 @@ Clients will communicate with each other via PEER-TO-PEER structure.(Decentraliz
 
 ### Functionality:
 
-Planned api capabilities:
+Capabilities:
 
 - Client discovery
 
@@ -27,7 +27,9 @@ Planned api capabilities:
 
 - Message sending in a given format to everyone on the network
 
-- Send private messages to a specific client (we will work on appropriate encryption for sent messages - each client will have its own key)
+- Send private messages to a specific client
+
+- Tic tac toe Game mode invite/play functionality 
 
 ### Client Characteristics:
 
